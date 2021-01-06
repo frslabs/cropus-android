@@ -89,7 +89,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
    
     //REQUIRED - Cropus SDK Dependency
-    implementation 'com.frslabs.android.sdk:cropus:0.0.8'
+    implementation 'com.frslabs.android.sdk:cropus:1.0.0'
     
     //Add below line only if minSdkVersion is < 24 
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.0.10'
