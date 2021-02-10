@@ -197,10 +197,10 @@ Error codes and their meaning are tabulated below
 
 | Label          | Code |Message                 |
 | -------------- | ----- |---------------------- |
-|ERROR_CODE_CAM_PREMISSION | 803 | Required permissions for Cropus SDK were not granted |
+|ERROR_CODE_CAM_PERMISSION | 803 | Required permissions for Cropus SDK were not granted |
 |ERROR_CODE_INTERRUPTED | 804 | Cropus SDK Interrupted |
-|ERROR_CODE_EXPIRED_LICENSE | 805 | Cropus SDK License has expired |
-|ERROR_CODE_INVALID_LICENSE | 806 | Invalid Cropus SDK License |
+|ERROR_CODE_EXPIRED_LICENCE | 805 | Cropus SDK License has expired |
+|ERROR_CODE_INVALID_LICENCE | 806 | Invalid Cropus SDK License |
 |ERROR_CODE_INVALID_CONFIG | 807 | Invalid Cropus SDK Config |
 |ERROR_CODE_FILE_IO | 809 | Error Saving File to Disk |
 
