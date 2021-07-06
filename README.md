@@ -1,5 +1,5 @@
 # CROPUS ANDROID SDK
-![version](https://img.shields.io/badge/version-v1.0.2-blue)
+![version](https://img.shields.io/badge/version-v1.0.3-blue)
 
 The Cropus Android SDK is a real-time signature capture and crop solution for Android.
 
@@ -89,7 +89,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
    
     //REQUIRED - Cropus SDK Dependency
-    implementation 'com.frslabs.android.sdk:cropus:1.0.2'
+    implementation 'com.frslabs.android.sdk:cropus:1.0.3'
     
     //Add below line only if minSdkVersion is < 24 
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.0.10'
@@ -150,6 +150,8 @@ public class MainActivity extends AppCompatActivity implements CropusResultCallb
         //Initialize the Cropus SDK Config object with the appropriate configurations
         CropusConfig cropusConfig = new CropusConfig.Builder()
                 .setLicenseKey(CROPUS_LICENSE_KEY)
+                .setOutputImageFormat("jpg")    //Output image format either jpg or png by default result will be in jpg format. 
+                .setOutputImageResolution("both") // Output image resolution either both,low,high by default result is in high resoltion image.
                 .build();
 
         //Call the Cropus SDK 
@@ -187,6 +189,16 @@ Given below are the public methods in brief.
  <td>Uri</td>
  <td>getImagePath()</td>
  <td>Returns the Signature Image Path as Uri</td>
+ </tr>
+   <tr>
+ <td>Uri</td>
+ <td>getImagePathHighres()</td>
+ <td>Returns the Signature high resolution Image Path as Uri</td>
+ </tr>
+   <tr>
+ <td>Uri</td>
+ <td>getImagePathLowres()</td>
+ <td>Returns the Signature lower resolution Image Path as Uri</td>
  </tr>
 </table>
 </div>
