@@ -37,8 +37,6 @@ Once you have the license , follow the below instructions for a successful integ
 
 **Minimum SDK Version** -  **23**
 
-**Compile SDK Version** - **32**
-
 ## Download
 
 #### Using maven repository
