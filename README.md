@@ -1,5 +1,5 @@
 # CROPUS ANDROID SDK
-![version](https://img.shields.io/badge/version-v1.0.3-blue)
+![version](https://img.shields.io/badge/version-v1.1.0-blue)
 
 The Cropus Android SDK is a real-time signature capture and crop solution for Android.
 
@@ -9,6 +9,8 @@ Features available are
 - White Background Removal (Transparent Background , allowing seamless overlaying of the signature on another document)
 
 **Find the changelog and release history at [Here](CHANGELOG.md)**
+
+‼ ATTENTION ‼ → BREAKING CHANGE introduced at Cropus SDK `v1.1.0`. We have introduced a new license format. If you are using versions prior to `v1.1.0` and intend to update to v1.1.0, contact `frslabs@support.com` for an updated license.
 
 # Table Of Content
 
@@ -35,7 +37,7 @@ Once you have the license , follow the below instructions for a successful integ
 
 **Minimum SDK Version** -  **23**
 
-**Compile SDK Version** - **29+**
+**Compile SDK Version** - **32**
 
 ## Download
 
@@ -89,7 +91,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
    
     //REQUIRED - Cropus SDK Dependency
-    implementation 'com.frslabs.android.sdk:cropus:1.0.3'
+    implementation 'com.frslabs.android.sdk:cropus:1.1.0'
     
     //Add below line only if minSdkVersion is < 24 
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.0.10'
