@@ -10,7 +10,7 @@ Features available are
 
 **Find the changelog and release history [Here](CHANGELOG.md)**
 
-‼ ATTENTION ‼ → BREAKING CHANGE introduced at Cropus SDK `v1.1.0`. We have introduced a new license format. If you are using versions prior to `v1.1.0` and intend to update to v1.1.0, contact `support@frslabs.com` for an updated license.
+‼ ATTENTION ‼ → BREAKING CHANGE introduced at Cropus SDK `v1.1.0`. We have introduced a new license format. If you are using versions prior to `v1.1.0` and intend to update to `v1.1.0` or above, contact `support@frslabs.com` for an updated license.
 
 # Table Of Content
 
