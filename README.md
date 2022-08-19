@@ -1,5 +1,5 @@
 # CROPUS ANDROID SDK
-![version](https://img.shields.io/badge/version-v1.1.0-blue)
+![version](https://img.shields.io/badge/version-v1.1.1-blue)
 
 The Cropus Android SDK is a real-time signature capture and crop solution for Android.
 
