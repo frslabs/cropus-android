@@ -1,5 +1,5 @@
 # CROPUS ANDROID SDK
-![version](https://img.shields.io/badge/version-v1.1.1-blue)
+![version](https://img.shields.io/badge/version-v1.2.1-blue)
 
 The Cropus Android SDK is a real-time signature capture and crop solution for Android.
 
@@ -48,7 +48,7 @@ allprojects {
     repositories { 
        maven { 
             // Maven Url and Credentials for Cropus SDK. 
-            url "https://cropus-android.repo.frslabs.space/"                  
+            url "https://www.repo2.frslabs.space/repository/cropus-android/"              
             credentials { 
                    username 'repo-username' 
                    password 'repo-password' 
