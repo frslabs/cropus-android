@@ -1,5 +1,5 @@
 # CROPUS ANDROID SDK
-![version](https://img.shields.io/badge/version-v1.2.1-blue)
+![version](https://img.shields.io/badge/version-v1.2.2-blue)
 
 The Cropus Android SDK is a real-time signature capture and crop solution for Android.
 
@@ -152,6 +152,7 @@ public class MainActivity extends AppCompatActivity implements CropusResultCallb
                 .setLicenseKey(CROPUS_LICENSE_KEY)
                 .setOutputImageFormat("jpg")    //Output image format either jpg or png by default result will be in jpg format. 
                 .setOutputImageResolution("both") // Output image resolution either both,low,high by default result is in high resoltion image.
+                // .setLowResMaxImageSize(integer) // OPTIONAL: To set low resolution image size (default less than 25KB)
                 .build();
 
         //Call the Cropus SDK 
