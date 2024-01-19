@@ -1,5 +1,5 @@
 # CROPUS ANDROID SDK
-![version](https://img.shields.io/badge/version-v1.2.2-blue)
+![version](https://img.shields.io/badge/version-v1.2.3-blue)
 
 The Cropus Android SDK is a real-time signature capture and crop solution for Android.
 
@@ -150,9 +150,8 @@ public class MainActivity extends AppCompatActivity implements CropusResultCallb
         //Initialize the Cropus SDK Config object with the appropriate configurations
         CropusConfig cropusConfig = new CropusConfig.Builder()
                 .setLicenseKey(CROPUS_LICENSE_KEY)
-                .setOutputImageFormat("jpg")    //Output image format either jpg or png by default result will be in jpg format. 
-                .setOutputImageResolution("both") // Output image resolution either both,low,high by default result is in high resoltion image.
-                // .setLowResMaxImageSize(integer) // OPTIONAL: To set low resolution image size (default less than 25KB)
+                //.setOutputImageFormat("jpg")    //OPTIONAL: Output image format either jpg or png by default result will be in jpg format.
+                // .setCropusOutputImageQuality(CropusOutputImageQuality.both()) //OPTIONAL: To set output image quality. by default it's high image quality
                 .build();
 
         //Call the Cropus SDK 
@@ -218,10 +217,15 @@ Error codes and their meaning are tabulated below
 |ERROR_CODE_FILE_IO | 809 | Error Saving File to Disk |
 
 ## Cropus SDK Parameters
-
-- `setLicenseKey(String cropusLicenseKey)`   ***(Required)***
   
-  Accepts the Cropus SDK licence key as a `String`
+`CropusConfig.Builder()` allows to instantiate the `CropusConfig` object with customisable features. `CropusConfig` is to be set when instantiating `Cropus` object.
+
+| Method                                               | Default              | Required | Comments    |
+|:---------------------------------------------------- |:-------------------- |:-------- |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| *setLicenceKey(String licenseKey)*                   | NULL                 | Yes      | Sets the License Key needed for Cropus SDK                          |
+| *setOutputImageFormat(String)*      | jpg                | Optional      | To get output image in jpg/jpeg format use **jpg**, and for png format use **png**                        |
+| *setCropusOutputImageQuality()*      | CropusOutputImageQuality.high()            | Optional      | Use `CropusOutputImageQuality` to set different resolution images. For high resolution image use `.high()`, for low resolution image use `.low()` (Default: below 25KB) or `.low(int)` (To set custom image size. minimum is 5KB) and `.custom(int width, int height)`        |
+| *build()*   | -               | -      | Builds `CropusConfig` Instance  |
 
 ## Help
 For any queries/feedback , contact us at `support@frslabs.com` 
